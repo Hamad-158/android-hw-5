@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fdde5"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/gggggggg"></ImageView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="560dp"
+        android:background="#B4AFB6DD"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Type your CV information"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="281dp"
+        android:layout_height="651dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-29dp"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/ggg"></ImageView>
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/edt1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="30dp"
+        android:background="#CEEFEFEF"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/edt2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="30dp"
+        android:background="#CEEFEFEF"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/edt3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="30dp"
+        android:background="#CEEFEFEF"
+        android:ems="10"
+        android:hint="Job"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt3"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/edt4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="30dp"
+        android:background="#CEEFEFEF"
+        android:ems="10"
+        android:hint="EmailAddress"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/edt4"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="234dp"
+        android:background="#CEEFEFEF"
+        android:ems="10"
+        android:hint="number"
+        android:inputType="phone" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#5fdde5"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/dddddd" />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="298dp"
+        app:srcCompat="@drawable/mmm" />
+
+    <ImageView
+        android:layout_width="39dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="239dp"
+        app:srcCompat="@drawable/nnn" />
+
+    <ImageView
+        android:layout_width="47dp"
+        android:layout_height="27dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="356dp"
+        app:srcCompat="@drawable/jjj" />
+
+    <ImageView
+        android:layout_width="47dp"
+        android:layout_height="27dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="416dp"
+        app:srcCompat="@drawable/bbb" />
+
+    <ImageView
+        android:layout_width="31dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="480dp"
+        app:srcCompat="@drawable/ttt" />
+
+</RelativeLayout>
