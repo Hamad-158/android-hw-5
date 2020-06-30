@@ -23,67 +23,72 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView6"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="295dp"
+        android:layout_marginEnd="275dp"
         android:layout_marginBottom="65dp"
         android:background="#AECA5116"
         android:fontFamily="serif"
         android:text="your name :"
+        android:textAlignment="center"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView7"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="310dp"
+        android:layout_marginEnd="275dp"
         android:layout_marginBottom="65dp"
         android:background="#AECA5116"
         android:fontFamily="serif"
         android:text="your age:"
+        android:textAlignment="center"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView8"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="310dp"
+        android:layout_marginEnd="275dp"
         android:layout_marginBottom="65dp"
         android:background="#AECA5116"
         android:fontFamily="serif"
         android:text="your job :"
+        android:textAlignment="center"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView9"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="290dp"
+        android:layout_marginEnd="275dp"
         android:layout_marginBottom="65dp"
         android:background="#AECA5116"
         android:fontFamily="serif"
         android:text="your email :"
+        android:textAlignment="center"
         android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="280dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="147dp"
         android:background="#AECA5116"
         android:fontFamily="serif"
         android:text="your namber :"
+        android:textAlignment="center"
         android:textSize="18sp" />
 
     <TextView
@@ -92,9 +97,10 @@
         android:layout_height="45dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="473dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="490dp"
         android:background="@drawable/hw"
+        android:gravity="center"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="18sp"
@@ -106,12 +112,14 @@
         android:layout_height="45dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="371dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="402dp"
         android:background="@drawable/hw"
-        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/job"
@@ -120,24 +128,28 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="295dp"
+        android:layout_marginBottom="314dp"
         android:background="@drawable/hw"
-        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/textView1"
         android:layout_width="200dp"
         android:layout_height="45dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="203dp"
+        android:layout_marginBottom="223dp"
         android:background="@drawable/hw"
-        android:textAlignment="viewStart"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="true"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/num"
@@ -146,12 +158,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="134dp"
         android:background="@drawable/hw"
         android:gravity="center"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
 
     <ImageView
         android:layout_width="154dp"
@@ -173,7 +186,6 @@
         android:backgroundTint="#f1e3cb"
         android:scaleType="fitXY"
         app:srcCompat="@drawable/dd22" />
-
 
 </RelativeLayout>
 

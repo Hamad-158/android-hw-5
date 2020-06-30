@@ -3,11 +3,13 @@ package com.example.hw5;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import static java.lang.String.valueOf;
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -16,18 +18,36 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-
-        TextView num = findViewById(R.id.num);
-        TextView email = findViewById(R.id.email);
-        TextView job = findViewById(R.id.job);
-        TextView Age = findViewById(R.id.age);
-        TextView Name = findViewById(R.id.Name1);
-        Bundle c = getIntent().getExtras();
-        Name.setText(c.getString("Name"));
-        Age.setText(c.getString("Age"));
-        job.setText(c.getString("Job"));
-        email.setText(c.getString("email"));
+        final Bundle c = getIntent().getExtras();
+        final TextView num = findViewById(R.id.num);
         num.setText(c.getString("num"));
+        num.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+c.getString("num")));
+                startActivity(intent);
+            }
+        });
+        TextView email = findViewById(R.id.textView1);
+        email.setText(c.getString("email"));
+        (findViewById(R.id.textView1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.Gmail.com/";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+        TextView job = findViewById(R.id.job);
+        job.setText(c.getString("Job"));
+        TextView Age = findViewById(R.id.age);
+        Age.setText(c.getString("Age"));
+        TextView Name = findViewById(R.id.Name1);
+        Name.setText(c.getString("Name"));
 
 
         ImageButton button = findViewById(R.id.imageButton3);

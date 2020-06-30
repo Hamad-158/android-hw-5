@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -30,20 +31,22 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity2.this, MainActivity3.class);
-                 Intent w = new Intent(Intent.ACTION_VIEW);
-                w.setData(Uri.parse(""));
-                Intent n = new Intent(Intent.ACTION_DIAL);
-                n.setData(Uri.parse(""));
-                    i.putExtra("Name",edt.getText().toString());
+                String edtt = edt.getText().toString();
+                String edtt1 = edt1.getText().toString();
+                String edtt2 = edt2.getText().toString();
+                String edtt3 = edt3.getText().toString();
+                String edtt4 = edt4.getText().toString();
+
+                if (edtt.equals("")||edtt1.equals("")||edtt2.equals("")||edtt3.equals("")||edtt4.equals("")){
+       Toast.makeText(MainActivity2.this , "Error (140) Complete the CV" , Toast.LENGTH_LONG).show();
+                }else {
+                     i.putExtra("Name",edtt);
+                     i.putExtra("Age",edtt1);
+                     i.putExtra("Job",edtt2);
+                     i.putExtra("email",edtt3);
+                     i.putExtra("num",edtt4);
                     startActivity(i);
-                     i.putExtra("Age",edt1.getText().toString());
-                    startActivity(i);
-                     i.putExtra("Job",edt2.getText().toString());
-                    startActivity(i);
-                     w.putExtra("email",edt3.getText().toString());
-                    startActivity(w);
-                     n.putExtra("num",edt4.getText().toString());
-                    startActivity(n);
+                }
             }
         });
     }
